@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛒CoffeeGo☕</title>
+    <!--Link to font awesome for inserting icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Lest link google for inserting font families-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+
+    <!--Link Estilos CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="Logo">
+                <!--Insertamos icono de tazita de cafe-->
+                <i class="fa-solid fa-mug-hot logo-icon"></i>
+                <div class="logo-text">Coffee<span>GO</span></div>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#">Ubicación</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                </ul>
+            </nav>
+
+            <div classs="nav-button">
+                <a href="#" class="btn btn-secondary">Ingreso</a>
+                <a href="#" class="btn btn-primary">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <!--HERO SECTION-->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-subtitle">
+                    <i class="fa-solid fa-seedling"></i>
+                    Más que café, una historia de origen ético.
+                </div>
+                <h1 class="hero-title">Café Artesanal☕<br><span>Elaborado Con
+                        Pasión🙌</span></h1>
+                <p class="hero-text">Descubre cafés de origen único tostados a la perfección.
+                    Nuestros granos provienen de las mejores regiones cafetaleras de Colombia,
+                    lo que garantiza que cada taza sea un viaje de sabor.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Descrure nuevos sabores</a>
+                    <a href="#" class="btn btn-secondary">Visit Our Coffee</a>
+                </div>
+            </div>
+            <img src="public/1.jpg" alt="" width="370px">
+        </div>
+    </section>
+
+    <!--PRODUCTS SECTION-->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Mostrador</div>
+                <h2 class="section-title">Café De Autor</h2>
+                <p class="section-desc">Te presento lo mejor de lo mejor.
+                    Una selección personal hecha con pasión y conocimiento.</p>
+            </div>
+
+            <div class="products-grid">
+                <!--CARD1-->
+                <div class="products-card">
+                    <div class="product-img">
+                        <img src="public/2.jpg" alt="Viennese coffee">
+                    </div>
+                    <div class="products-info">
+                        <div class="product-tag">🤩CAFÉ DE LA SEMANA🤩</div>
+                        <h3 class="product-title"><b>Viennese coffee</b></h3>
+                        <p class="product-desc">Café negro servido con una generosa capa de crema batida
+                            en lugar de leche o azúcar. Elegante y suave.</p>
+                        <div class="product-footer">
+                            <div class="product-price">$18.000</div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--CARD2-->
+                <div class="products-card">
+                    <div class="product-img">
+                        <img src="public/3.jpg" alt="Colombian Supremo">
+                    </div>
+                    <div class="products-info">
+                        <h3 class="product-title"><b>Capuchino</b></h3>
+                        <p class="product-desc">Espresso con partes iguales de leche caliente y espuma.
+                            Cremoso, equilibrado y con sabor intenso.</p>
+                        <div class="product-footer">
+                            <div class="product-price">$12.000</div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--CARD3-->
+                <div class="products-card">
+                    <div class="product-img">
+                        <img src="public/4.jpg" alt="Colombian Supremo">
+                    </div>
+                    <div class="products-info">
+                        <div class="product-tag">⭐ESTELAR⭐</div>
+                        <h3 class="product-title">Expreso</h3>
+                        <p class="product-desc">Café intenso y concentrado, extraído en pocos segundos.
+                            Pequeño en tamaño, grande en sabor y aroma.</p>
+                        <div class="product-footer">
+                            <div class="product-price">$15.000</div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Link JavaScript File-->
+    <script src="script.js"></script>
+</body>
+
+</html>
