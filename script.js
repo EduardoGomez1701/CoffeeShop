@@ -1,22 +1,16 @@
-// Smoth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function () {
+        const name = this.getAttribute('data-name');
+        const price = this.getAttribute('data-price');
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const index = cart.findIndex(item => item.name === name);
+        if (index !== -1) {
+            cart[index].quantity += 1;
+        } else {
+            cart.push({ name, price, quantity: 1 });
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert(`${name} agregado al carrito`);
     });
 });
 
-// Porduct hover animations
-const productCards = document.querySelectorAll('.product-card');
-productCards.forEach(card => {
-    card.addEventListener('mouseover', function() {
-        this.style.transform = 'translateY(-15px)';
-    });
-
-    card.addEventListener('mouseout', function() {
-        this.style.transform = 'translateY(0)';
-    });
-});
